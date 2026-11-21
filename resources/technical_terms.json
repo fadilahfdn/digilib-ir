@@ -1,0 +1,8 @@
+{
+  "c++": "cplusplus",
+  "c#": "csharp",
+  ".net": "dotnet",
+  "node.js": "nodejs",
+  "tcp/ip": "tcpip",
+  "wi-fi": "wifi"
+}
