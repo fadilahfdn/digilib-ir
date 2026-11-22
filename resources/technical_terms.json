@@ -4,5 +4,13 @@
   ".net": "dotnet",
   "node.js": "nodejs",
   "tcp/ip": "tcpip",
-  "wi-fi": "wifi"
+  "wi-fi": "wifi",
+  "vb.net": "vbnet",
+  "ci/cd": "cicd",
+  "k-means": "kmeans",
+  "e-book": "ebook",
+  "e-books": "ebook",
+  "e-government": "egovernment",
+  "e-health": "ehealth",
+  "e-commerce": "ecommerce"
 }
