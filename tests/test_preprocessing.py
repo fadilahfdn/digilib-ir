@@ -44,3 +44,10 @@ def test_tanda_hubung_menjadi_spasi():
 def test_urutan_tahap_sesuai_kontrak():
     assert list(preprocess_steps("a").keys()) == ["teks_asli", "case_folding", "normalisasi_istilah",
                                                    "sanitasi", "token", "stopword_dibuang", "stem"]
+
+
+def test_istilah_teknis_tambahan():
+    token = preprocess("Membangun aplikasi dengan ASP.NET, .NET, Node.js, CI/CD, dan e-commerce", {"stemming": False})
+    for t in ("aspnet", "dotnet", "nodejs", "cicd", "ecommerce"):
+        assert t in token
+    assert "net" not in token and "asp" not in token
