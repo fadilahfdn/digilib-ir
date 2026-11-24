@@ -46,8 +46,8 @@ def test_urutan_tahap_sesuai_kontrak():
                                                    "sanitasi", "token", "stopword_dibuang", "stem"]
 
 
-def test_istilah_teknis_tambahan():
-    token = preprocess("Membangun aplikasi dengan ASP.NET, .NET, Node.js, CI/CD, dan e-commerce", {"stemming": False})
-    for t in ("aspnet", "dotnet", "nodejs", "cicd", "ecommerce"):
+def test_istilah_teknis_dari_dataset():
+    token = preprocess("Visual Basic .NET (VB.NET), k-means, e-book, e-government, TCP/IP, dan CI/CD", {"stemming": False})
+    for t in ("dotnet", "vbnet", "kmeans", "ebook", "egovernment", "tcpip", "cicd"):
         assert t in token
-    assert "net" not in token and "asp" not in token
+    assert "net" not in token
